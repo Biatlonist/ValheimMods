@@ -92,7 +92,7 @@ namespace AdvancedPortals
                 {
                     Table = "_HammerPieceTable",
                     CraftingStation = "piece_workbench",
-                    Resources = MakeRecipeFromConfig("Ancient Portal", _ancientPortalRecipe.Value),
+                    Resources = MakeRecipeFromConfig("Древний портал", _ancientPortalRecipe.Value),
                     OnPrefabAdded = (prefab =>
                     {
                         var advPortal = prefab.AddComponent<AdvancedPortal>();
@@ -110,7 +110,7 @@ namespace AdvancedPortals
                 LoadBuildPiece(assetBundle, "portal_obsidian", new PieceDef() {
                     Table = "_HammerPieceTable",
                     CraftingStation = "piece_workbench",
-                    Resources = MakeRecipeFromConfig("Obsidian Portal", _obsidianPortalRecipe.Value),
+                    Resources = MakeRecipeFromConfig("Портал из обсидиана", _obsidianPortalRecipe.Value),
                     OnPrefabAdded = (prefab => {
                         var advPortal = prefab.AddComponent<AdvancedPortal>();
                         advPortal.AllowedItems = allowedTypesObsidian.ToList();
@@ -129,7 +129,7 @@ namespace AdvancedPortals
                 LoadBuildPiece(assetBundle, "portal_blackmarble", new PieceDef() {
                     Table = "_HammerPieceTable",
                     CraftingStation = "piece_workbench",
-                    Resources = MakeRecipeFromConfig("Black Marble Portal", _blackMarblePortalRecipe.Value),
+                    Resources = MakeRecipeFromConfig("Портал из черного мрамора", _blackMarblePortalRecipe.Value),
                     OnPrefabAdded = (prefab => {
                         var advPortal = prefab.AddComponent<AdvancedPortal>();
                         advPortal.AllowedItems = allowedTypesBlackMarble.ToList();
